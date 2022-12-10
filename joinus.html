@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <title>Mapple.com/myaccount</title>
+<head>
+<h1>Be part of Mapple</h1>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+  h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+p{
+  text-align: center;
+  color: black;
+}
+.p1{
+  text-align: center;
+  color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    background-color: rgb(39, 39, 39);
+    border-radius: 25px;
+    
+}
+
+  body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: rgb(0, 0, 0);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(175, 175, 175);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  color: white;
+  margin-top: 20px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+input {
+  margin: 0.25em 0em 1em 0em;
+}
+input {
+  margin: 0.25em 0em 1em 0em;
+  outline: none;
+  padding: 0.5em;
+  border: none;
+  background-color: rgb(225, 225, 225);
+  border-radius: 0.25em;
+  color: black;
+}
+button {
+  padding: 0.75em;
+  border: none;
+  outline: none;
+  background-color: rgb(127, 43, 216);
+  color: white;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(107,23,196);
+  transition: 750ms;
+}
+.goback{
+  background-color: rgb(76, 76, 76);
+  border-radius: 10px;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.goback:hover{
+  background-color: rgb(38, 38, 38);
+  transition: 750ms;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.login{
+  color: rgb(0, 0, 0);
+}
+</style>
+<body>
+  <form>
+    <div class="container">
+      <h1>Register</h1>
+      <p class="p1">Kindly fill in this form to register.</p>
+      <label for="username"><b>Username</b></label>
+      <input
+        type="text"
+        placeholder="Enter username"
+        name="username"
+        id="username"
+        required
+      />
+
+      <label for="email"><b>Email</b></label>
+      <input
+        type="text"
+        placeholder="Enter Email"
+        name="email"
+        id="email"
+        required
+      />
+
+      <label for="pwd"><b>Password</b></label>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        name="pwd"
+        id="pwd"
+        required
+      />
+
+      <label for="pwd-repeat"><b>Repeat Password</b></label>
+      <input
+        type="password"
+        placeholder="Repeat Password"
+        name="pwd-repeat"
+        id="pwd-repeat"
+        required
+      />
+
+      <button type="submit">Register</button>
+    </div>
+
+    <div>
+      <p>Already have an account? <a href="#" class="login">Log in</a>.</p>
+    </div>
+  </form>
+  <form>
+    <input type="button" value="Go back!" onclick="history.back()" class="goback">
+   </form>
+</body>
+</html>
+
